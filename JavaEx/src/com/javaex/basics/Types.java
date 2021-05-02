@@ -1,6 +1,6 @@
 package com.javaex.basics;
 
-//기본 타입 예제
+//기본 타입 예제 ㅎㅎ
 public class Types {
 
 	public static void main(String[] args) {
