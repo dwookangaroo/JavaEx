@@ -15,6 +15,7 @@ public class ConsoleEx {
 		
 		// print 메서드 -> 출력후 개행 안함
 		// println 메서드 -> 출력후 개행함
+		// printf 메서드 -> 형식화된 출력 -> TODO: 뒤쪽 String 항목에서 정리
 		System.out.print("Hello ");
 		System.out.println("Java");
 		
@@ -26,6 +27,9 @@ public class ConsoleEx {
 		// \ 자체를 표기하고자 할떄
 		String dir = "C:\\Windows\\System"; // \\ -> \
 		System.out.println(dir);
+		
+		System.err.println("표준 에러 출력!");
+		
 	}
 
 }
