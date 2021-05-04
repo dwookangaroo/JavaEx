@@ -4,8 +4,8 @@ public class EnumEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//enumBasic();
-		enumEx();
+		enumBasic();
+		//enumEx();
 	}
 	private static void enumEx() {
 		//ConditionalEx.switchEx3()를 enum버전으로 만들어보자
