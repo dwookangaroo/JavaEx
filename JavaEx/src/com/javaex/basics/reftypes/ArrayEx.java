@@ -126,16 +126,7 @@ public class ArrayEx {
 			System.out.print(scores[i]+"\t");
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 	}
 }
