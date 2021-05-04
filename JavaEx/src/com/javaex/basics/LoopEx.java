@@ -9,7 +9,76 @@ public class LoopEx {
 		//whileEx();
 		//whileGugu();
 		//whileInfinity();
-		doWhileEx();
+		//doWhileEx();
+		//forLoopEx();
+		//continueEx();
+		//breakEx();
+		randomEx();
+	}
+	private static void randomEx() {
+		//1-45까지 난수 6개 출력
+		//for문 버전
+		for (int i = 0; i < 6; i++) {
+			int randnum = (int)(Math.random()*45) + 1;
+			System.out.print(randnum + " ");
+			
+		}
+		System.out.println();
+		
+		//while문 버전
+		int i = 0;
+		
+		while(i < 6) {
+			System.out.print((int)(Math.random()*45)+1);
+			System.out.print(" ");
+			i++;
+		}
+		System.out.println();
+		
+	}
+	private static void breakEx() {
+		//6과 14로 동시에 나누어 떨어지는 가장 작은수를 찾아보자
+		// 어디까지 루프를 돌려야할지 판단이 어려움
+		// while 루프가 적합
+		int num = 1;
+		
+		while(true) {
+			if (num % 6 == 0 && num % 14 == 0) {
+				break;
+			}
+			System.out.print(".");
+			num++;
+		}
+		System.out.println("\n" + num);
+	}
+	private static void continueEx() {
+		// 1- 20 까지 수에서 2의배수 3의배수를 제외한 나머지를 출력한다.
+		
+		for (int i = 1; i <= 20; i++) {
+			if(i % 2 == 0 || i % 3 == 0) {
+				continue;
+			}
+				
+				//2의배수,3의배수면 아래코드는 수행되지않고 다음번 루프를 수행
+				System.out.println(i);
+			
+		}
+		
+	}
+	private static void forLoopEx() {
+		// 구구표 출력 (for문 버전) -> whileGugu와 비교
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("단을 입력하세요:");
+		int dan = scanner.nextInt();
+		
+		// for(제어변수초기화; 반복조건체크; 증감식)
+		for (int num = 1; num < 10; num++) {
+			System.out.println(dan + "*" + num + " = " + (dan*num));
+		}
+		
+		scanner.close();
 	}
 	private static void doWhileEx() {
 		// while 문의 반복조건을 뒤에서 확인
