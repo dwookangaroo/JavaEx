@@ -4,6 +4,7 @@ package com.javaex.oop.goods.v2;
 // 정보에 접근할수있는 특수 메서드 : getter/ setter 설정
 public class Goods {
 	// 필드
+	
 	private String name; // this
 	private int price;
 	
