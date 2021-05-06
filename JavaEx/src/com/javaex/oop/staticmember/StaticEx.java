@@ -32,15 +32,4 @@ public class StaticEx {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
