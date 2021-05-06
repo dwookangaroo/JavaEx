@@ -17,9 +17,11 @@ public class StaticExApp {
 		System.out.println("s1 해제!");
 		System.out.println("참조 카운트:" + StaticEx.refCount);
 		// 강제로 GC 호출
-		System.gc();
+		// 주의: 자바가 객체를 관리하는 순서를 보여드리기위한 코드
+		//      강제로 Garbage Collector를 호출하지는 말자!
+		System.gc(); //참고 코드로만 활용
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(3000); //3초대기
 			System.out.println("참조 카운트:" + StaticEx.refCount);
 		} catch(Exception e) {
 			
