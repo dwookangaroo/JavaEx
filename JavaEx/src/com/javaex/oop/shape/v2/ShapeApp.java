@@ -8,7 +8,7 @@ public class ShapeApp {
 		Shape r = new Rectangle(10, 20, 100, 50);
 		Shape c = new Circle(30, 40, 30);
 		
-		if(r instanceof Drawable) {
+		if(r instanceof Drawable) { //shape는 draw가 없으니깐 draw가있는 drawable로 바꿔준다
 			((Drawable)r).draw();
 		}
 		if(c instanceof Drawable) {
