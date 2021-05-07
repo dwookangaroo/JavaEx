@@ -18,6 +18,7 @@ public class SummaryApp {
 		fly(h2);
 		fly(p1);
 		fly(p2);
+		//eat(h1);
 		
 		dojang = new KungfuSkill[] {
 	//			(KungfuSkill)h1, //->쿵푸스킬 구현하지 않음
