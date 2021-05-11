@@ -1,6 +1,7 @@
 package com.javaex.api.collection.hash;
 
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashtableEx {
@@ -31,6 +32,13 @@ public class HashtableEx {
 		
 		// 값중에서 subject가 자바인 값이 있는가? : containsValue
 		System.out.println("Java가 값에 있는가?" + map.containsValue(new ClassRoom("Java", "R101")));
+		
+		// iterator
+		Iterator<String> it = map.keySet().iterator();//키의 목록이다 //그냥 받아오면안된다. keySet필요
+		while(it.hasNext()) {
+			String key = it.next(); // 키를 추출
+			System.out.println(map.get(key));
+		}
 		
 		// 앱 비우기
 		map.clear();

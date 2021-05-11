@@ -1,6 +1,7 @@
 package com.javaex.api.collection.hash;
 
 import java.util.HashSet;
+import java.util.Iterator;
 // 객체를 식별하는 정수 (해시 알고리즘)
 // 모든 객체는 다른값을 가지고있다 A, B
 public class HashSetEx {
@@ -26,6 +27,13 @@ public class HashSetEx {
 		// 포함 여부 확인
 		System.out.println("홍길동, 10 학생이 있는가? " + 
 		hs.contains(new Student("홍길동", 10))); // "홍길동" 이 오면안된다
+		
+		//iterator
+		Iterator<Student> it = hs.iterator();
+		while(it.hasNext()) {
+			Student st = it.next();
+			System.out.println(st);
+		}
 		
 		
 		
