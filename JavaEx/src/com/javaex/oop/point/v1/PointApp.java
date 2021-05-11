@@ -5,9 +5,9 @@ public class PointApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Point p1 = new Point();
-		p1.setX(10);
-		p1.setY(20);
-		p1.draw();
+		p1.setX(10); //10 저장
+		p1.setY(20); //20 저장
+		p1.draw();	//여기서 출력
 		
 		Point p2 = new Point();
 		p2.setX(30);

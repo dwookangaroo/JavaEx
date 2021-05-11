@@ -3,13 +3,13 @@ package com.javaex.oop.casting;
 public class AnimalApp {
 
 	public static void main(String[] args) {
-		// 자식 타입의 객체를 부모 타입 클래스로 참조할수있다.
 		Dog dog1 = new Dog("Snoopy");
 		
 		dog1.eat();
 		dog1.walk();
 		dog1.bark();
 		
+		// 자식 타입의 객체를 부모 타입 클래스로 참조할수있다.
 		// 자식 객체를 부모타입으로 참조하는것 -> upcasting
 		Animal dog2 = new Dog("Doogy");
 		dog2.eat();

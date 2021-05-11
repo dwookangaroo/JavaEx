@@ -15,7 +15,7 @@ public class Rectangle {
 	
 	@Override 
 	public boolean equals(Object obj) {
-		if (obj instanceof Rectangle) {
+		if (obj instanceof Rectangle) { // Object obj = new Rectangle();??
 			Rectangle other = (Rectangle)obj; //rectangle을 other로 변환한다
 			return width * height == other.width * other.height;
 		}

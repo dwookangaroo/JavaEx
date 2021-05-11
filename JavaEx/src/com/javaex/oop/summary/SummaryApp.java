@@ -9,6 +9,12 @@ public class SummaryApp {
 		Panda p1 = new Panda("핑", 30);
 		Panda p2 = new KungfuPanda("포", 15);
 		
+		
+		
+		
+		
+		
+		
 		fight(h1);
 		fight(h2);
 		fight(p1);
@@ -31,7 +37,7 @@ public class SummaryApp {
 			actor.kungfu();
 		}
 	}
-	
+
 	private static void fight(Animal actor) {
 		if(actor instanceof KungfuSkill) { // kungfuskill 구현
 			((KungfuSkill)actor).kungfu();

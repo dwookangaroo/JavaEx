@@ -1,6 +1,6 @@
 package com.javaex.oop.point.v3;
 
-// v2. 생성자
+// v3. 메서드오버로딩
 public class Point {
 	// 필드
 	private int x;

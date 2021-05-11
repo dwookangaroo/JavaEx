@@ -2,8 +2,9 @@ package com.javaex.oop.point.v4;
 
 public class ColorPoint extends Point {
 	// 부모로부터 필드와 메소드를 물려받음
+	//필드
 	private String color;
-	// 생성지
+	// 생성자
 	public ColorPoint(int x,
 			int y,
 			String color) {
@@ -33,7 +34,7 @@ public class ColorPoint extends Point {
 		String message = String.format("색상점[x=%d, y=%d color=%s]을 ",
 				x, y, color);
 				 
-		message += show ? "그렸습니다.!": "지웠습니다.!";
+		message += show ? "그렸습니다.!!": "지웠습니다.!!!";
 		System.out.println(message);
 		
 		// Override를 해도 부모의 메서드가 지워지는것은 아니다.

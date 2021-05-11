@@ -7,7 +7,7 @@ public class Rectangle extends Shape{
 	protected int height;
 	
 	public Rectangle(int x, int y, int width, int height) {
-		super(x, y);
+		super(x, y); //부모꺼 갖다씀
 		this.width = width;
 		this.height = height;
 	}

@@ -6,6 +6,7 @@ public class Rectangle extends Shape implements Drawable{
 	protected int width;
 	protected int height;
 	
+	//생성자
 	public Rectangle(int x, int y, int width, int height) {
 		super(x, y);
 		this.width = width;

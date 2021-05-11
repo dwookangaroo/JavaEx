@@ -5,7 +5,36 @@ public class StringEx {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//stringBasic();
-		usefulMethods();
+		//usefulMethods();
+		stringBufferEx();
+	}
+	// 문자열 객체 : 연결, 메서드 수행시 매번 새 String 반환
+	// StringBuffer 경우 : 복잡할떄 저장공간 생성
+	// 수행될떄 새로운객체가 생성되지 않는다.
+	private static void stringBufferEx() {
+		// 버퍼 생성
+		StringBuffer sb = new StringBuffer("This");
+		
+		// 문자열 추가: append
+		sb.append(" is pencil");
+		// 문자열 삽입:insert
+		sb.insert(8, "my");
+		// 문자열 치환:replace
+		sb.replace(8, 10,"your "); // 8번 인덱스부터 10번인덱스 앞까지
+		
+		//버퍼 사이즈 변경
+		sb.setLength(10); // 내부 버퍼의 크기를 10으로 줄인다.
+		System.out.println(sb);// 나머진 그냥 날려버림
+		
+		// StringBuffer의 메서드들은 연속해서 호출가능 -> 메서드 체이닝
+		
+		StringBuffer sb2 = new StringBuffer("This")
+				.append(" is pencil")
+				.insert(8,  "my")
+				.replace(8,  10, "your ");
+		String s = sb2.toString(); // 이부분에서 객체를 생성
+		
+		System.out.println("결과:" + s);
 	}
 	
 	private static void stringBasic() {
@@ -63,6 +92,9 @@ public class StringEx {
 			System.out.println("WORD:" + chunk);
 		}
 		
+		// 문자열 비교: Unicode 비교
+		// 같으면 0, 앞의 갚이 작으면(먼저) 음수, 앞의것이 크면(뒤면) 양수
+		System.out.println("ABC".compareTo("ABD"));
 		
 		
 		

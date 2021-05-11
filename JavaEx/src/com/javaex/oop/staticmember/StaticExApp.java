@@ -8,7 +8,7 @@ public class StaticExApp {
 		StaticEx s1 = new StaticEx();
 		System.out.println("참조 카운트:" + StaticEx.refCount); //s1.refCount
 		//static 멤버는 객체생성(new) 없이도 접근할수 있다.
-		
+	
 		StaticEx s2 = new StaticEx();
 		System.out.println("참조 카운트:" + StaticEx.refCount);
 		

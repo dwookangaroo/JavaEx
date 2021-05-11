@@ -32,8 +32,7 @@ public class Point {
 		System.out.printf("점[x=%d, y=%d]을 그렸습니다.%n", x, y);
 	}
 	
-	// 메서드 오버로딩
-	// 다형성의 일부: 다른 메서드와 같은 이름이지만 매개변수의 타입, 개수, 순서만 다른 메서드 생성
+	
 	public void draw(boolean show) {
 		String message = String.format("점[x=%d, y=%d]을 ", x, y);
 		if(show) {

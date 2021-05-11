@@ -15,3 +15,5 @@ public class RectangleApp {
 	}
 
 }
+
+// b instanceof Rectangle

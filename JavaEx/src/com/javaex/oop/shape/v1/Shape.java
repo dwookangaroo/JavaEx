@@ -15,9 +15,9 @@ public abstract class Shape {
 		this.y = y;
 	}
 	
-	// 메서드는 추상메서드 or 일반 메서드를 가질수있지만
+	// 추상메서드 or 일반 메서드를 가질수있지만
 	// 반드시 추상메서드가 한개 이상 있어야한다.
-	
+	// 메서드
 	public abstract void draw(); // 선언만 한다. -> 구현은 자식 클래스에서
 	public abstract double area();
 	
