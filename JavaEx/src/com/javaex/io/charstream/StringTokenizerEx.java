@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class StringTokenizerEx {
 	static String rootPath = System.getProperty("user.dir") + "\\files\\";
-	static String filename = rootPath + "theives.txt";
+	static String filename = rootPath + "thieves.txt";
 	
 	// FileReader, BufferedReader, StringTokenizer의 조합으로 만들어봅시다
 	public static void main(String[] args) {

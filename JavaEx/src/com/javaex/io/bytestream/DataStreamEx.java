@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
+//이거랑 스캐너 비교
 public class DataStreamEx {
 	static String rootPath = System.getProperty("user.dir") + "\\files\\";
 	static String filename = rootPath + "primitives.txt";
