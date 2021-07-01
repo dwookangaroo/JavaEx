@@ -8,9 +8,9 @@ public class ArraysClassEx {
 	public static void main(String[] args) {
 		//printArrayEx();
 		//copyArrayEx();
-		sortEx();
+		//sortEx();
 		//sortCustomEx();
-		//searchEx();
+		searchEx();
 	}
 	// 배열내 검색
 	private static void searchEx() {
